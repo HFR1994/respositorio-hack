@@ -1,0 +1,70 @@
+div {
+    margin: 30px
+}
+
+h1{
+    color: blue;
+}
+
+#encabezado1{
+    color: crimson;
+}
+
+body > div > p {
+    color: green;
+}
+
+img[alt=perrito]{
+    width: 30px;
+}
+
+p:hover{
+    background: green;
+    color: honeydew;
+}
+
+.red-input:focus {
+    background: yellow;
+    color: red;
+  }
+  
+.blue-input:focus {
+background: yellow;
+color: blue;
+}
+
+/*
+div:first-child{
+    background-color: indigo;
+}
+*/
+
+div:not(.class1){
+    background-color: khaki;
+}
+
+.class1{
+    color: fuchsia;
+}
+
+.class2{
+    color: lightcyan;
+}
+
+div{
+    font-size: 20px;
+}
+
+img{
+    width: 5em;
+    -webkit-box-shadow: 35px -16px 22px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 35px -16px 22px -1px rgba(0,0,0,0.75);
+    box-shadow: 35px -16px 22px -1px rgba(0,0,0,0.75)
+}
+
+p {
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+

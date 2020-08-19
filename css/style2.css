@@ -1,0 +1,31 @@
+body{
+    position: relative;
+}
+
+img{
+    width: 200px;
+}
+
+#position-block{
+    display: block;
+}
+
+#position-inline{
+    display: inline-block;
+}
+
+#position-flex{
+    display: flex;
+}
+
+#position-flex p{
+    align-content: space-between;
+}
+
+#perrito1{
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+    width: 200px;
+    height: 200px;
+}
