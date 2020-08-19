@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>My ajax page</title>
+    <meta name="description" content="Mi cool page">
+    <meta name="author" content="Hector Flores">
+    <style>
+        .foo{
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="button">Picame</button>
+    <div id="div1"></div>
+    <ul>
+        <li>hola</li>
+        <li>adios</li>
+    </ul>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script type="text/javascript">
+    $("button").click(function () {
+        $.ajax({
+            url: "https://webhook.site/08b1af6e-d45c-4f94-8ae3-690fd54a6001", error: function (error) {
+                console.log(error)
+            }, error: function(error){
+                $("#div1").html(error.responseText);
+            }
+        });
+
+        $( "li" ).each(function() {
+            $( this ).addClass( "foo" );
+        });
+
+        var day = moment("1995-12-25");
+        $("#div1").html(day.format("DD-MM-YYYY"));
+    });
+</script>
+
+</html>

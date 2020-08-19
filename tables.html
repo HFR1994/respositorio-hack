@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Mi table page</title>
+  <meta name="description" content="Mi table page">
+  <meta name="author" content="Hector Flores">
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <caption>
+        Mi tabla
+      </caption>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+        <th>Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Enero</td>
+        <td>$100</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Febrero</td>
+        <td>$80</td>
+        <td>$180</td>
+      </tr>
+      <tr>
+        <td>Marzo</td>
+        <td>$80</td>
+        <td>$260</td>
+      </tr>
+      <tr>
+        <td colspan="3">Fin del año fiscal</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Los meses</td>
+        <td>El individual</td>
+        <td rowspan="2">Balance total: $260</td>
+      </tr>
+      <tr>
+        <td colspan="2">El SAT se quedo con todo...</td>
+      </tr>
+    </tfoot>   
+  </table>
+</body>
+</html>
